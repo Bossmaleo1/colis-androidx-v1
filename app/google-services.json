@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "403802558864",
+    "firebase_url": "https://kcolis-cdf70.firebaseio.com",
+    "project_id": "kcolis-cdf70",
+    "storage_bucket": "kcolis-cdf70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403802558864:android:d2b34ac3e4e0057f",
+        "android_client_info": {
+          "package_name": "com.kcolis.android.kcolis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403802558864-k14gku9fsjvc0or15pm47vibvn9vcbqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9XGDdB3dcK2F3zicFEXsGCLXkuUvow8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403802558864-k14gku9fsjvc0or15pm47vibvn9vcbqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

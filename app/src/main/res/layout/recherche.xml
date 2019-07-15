@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        >
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/depart_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_flight_takeoff_black_24"
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_layout_depart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Depart"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/depart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:focusable="false"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/password_block"
+                    android:layout_below="@+id/depart_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_flight_land_black_24"
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_layout_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Destination"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/arrivvee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:focusable="false"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/date_annonce"
+                    android:layout_below="@+id/password_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_date_range_black_24"
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_layout_dateannonce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date du voyage"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dateannonce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:focusable="false"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/rechercher"
+                    android:layout_below="@+id/date_annonce"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rechercher"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@android:color/white"
+                    />
+
+            </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/recherche"
+        android:icon="@drawable/baseline_search_black_24"
+        android:title="Rechercher" />
+
+    <item
+        android:id="@+id/annonce"
+        android:icon="@drawable/baseline_flight_black_24"
+        android:title="Ajouter" />
+
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notifications" />
+
+</menu>
