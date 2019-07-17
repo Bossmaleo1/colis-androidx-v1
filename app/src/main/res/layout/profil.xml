@@ -6,6 +6,11 @@
     xmlns:fresco="http://schemas.android.com/tools"
     android:fitsSystemWindows="true">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarlayout"
         android:layout_width="match_parent"
@@ -21,7 +26,7 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="4dp"
             app:expandedTitleMarginEnd="0dp"
-            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+            app:layout_scrollFlags="enterAlwaysCollapsed">
 
             <com.facebook.drawee.view.SimpleDraweeView
                 android:id="@+id/my_image_view"
@@ -43,6 +48,228 @@
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/graycolor"
+        android:padding="10dp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/piece_identite_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_menu_message_public"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/verification_piece_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_verified_user_black_24"
+                    android:tint="@color/greencolor1"
+                    android:tintMode="@color/greencolor1"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/verification_piece_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Piece d'Identite Verifiee"
+                    android:textColor="@color/greencolor1"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mention_block"
+            android:layout_below="@+id/piece_identite_block"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_menu_message_public"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/mention_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_local_library_black_24"
+                    android:tint="@color/colorPrimary"
+                    android:tintMode="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:tooltipText="Consulter le profil du demandeur"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mention : Debutant"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--RelativeLayout
+            android:id="@+id/phone_block"
+            android:layout_below="@+id/mention_block"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_menu_message_public"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_phone_black_24"
+                    android:tint="@color/colorPrimary"
+                    android:tintMode="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+33654120158"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout-->
+
+        <RelativeLayout
+            android:id="@+id/notation_block"
+            android:layout_below="@+id/mention_block"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_menu_message_public"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note : 4.2/5, 5 Avis"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/notationimage_block"
+                    android:layout_below="@+id/notation_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_black_24"
+                            android:tint="@color/colorPrimary"
+                            android:tintMode="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_black_24"
+                            android:tint="@color/colorPrimary"
+                            android:tintMode="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_black_24"
+                            android:tint="@color/colorPrimary"
+                            android:tintMode="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_black_24"
+                            android:tint="@color/colorPrimary"
+                            android:tintMode="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_half_black_24"
+                            android:tint="@color/colorPrimary"
+                            android:tintMode="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

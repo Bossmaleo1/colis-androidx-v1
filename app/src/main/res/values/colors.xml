@@ -6,7 +6,8 @@
     <color name="primarygray">#E0E0E0</color>
     <color name="primarygraydark">#9E9E9E</color>
     <color name="graycolor">#E0E0E0</color>
-    <color name="greencolor">#4CAF50</color>
+    <color name="greencolor1">#4CAF50</color>
+    <color name="greencolor2">#00C853</color>
     <color name="placeholder_bg">#dddddd</color>
     <color name="item_name">#0c0c0c</color>
     <color name="description">#1a1a1a</color>

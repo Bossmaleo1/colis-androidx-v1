@@ -25,6 +25,10 @@ public class Annonce implements Parcelable {
     private String NOMBRE_KILO;
     private Context context;
 
+    public Annonce() {
+
+    }
+
     public Annonce(Context context,int ID,int ID_USER,String PHOTO_USER,String NOM_USER
             ,String PHONE_USER,String DATE_ANNONCE,String DATE_ANNONCE_VOYAGE,String PRIX
             ,String LIEUX_RDV1,String LIEUX_RDV2,String VILLE_DEPART,String VILLE_ARRIVEE,String HEURE_DEPART,String HEURE_ARRIVEE

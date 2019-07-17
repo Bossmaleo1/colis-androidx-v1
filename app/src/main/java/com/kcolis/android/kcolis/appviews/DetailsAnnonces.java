@@ -42,14 +42,14 @@ public class DetailsAnnonces extends AppCompatActivity {
     private TextView poids;
     private TextView rdv1;
     private TextView rdv2;
-    private RelativeLayout block_detail;
-    private TextView USER_DETAILS;
+    private RelativeLayout block_title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details_annonces);
         toolbar =  findViewById(R.id.toolbar);
+        block_title = findViewById(R.id.iconetmachin);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -67,10 +67,8 @@ public class DetailsAnnonces extends AppCompatActivity {
         heure_depart = findViewById(R.id.contenu_heure_depart_vrai);
         heure_arrivee = findViewById(R.id.contenu_heure_arrivee_vrai);
         poids = findViewById(R.id.poids_vrai);
-        block_detail = findViewById(R.id.block_details);
         rdv1 = findViewById(R.id.rdv1);
         rdv2 = findViewById(R.id.rdv2);
-        USER_DETAILS = findViewById(R.id.espace_details_annonceur4);
         user_name.setText(annonce.getNOM_USER());
         user_label_time.setText(annonce.getDATE_ANNONCE());
         ville_depart.setText(annonce.getVILLE_DEPART());
@@ -83,7 +81,6 @@ public class DetailsAnnonces extends AppCompatActivity {
         rdv1.setText("rdv de depart : "+annonce.getLIEUX_RDV1());
         rdv2.setText("rdv d'arrivee : "+annonce.getLIEUX_RDV2());
         poids.setText(annonce.getNOMBRE_KILO()+" Kg (max)");
-        USER_DETAILS.setText("Plus de details sur "+annonce.getNOM_USER()+" ?");
         if(!annonce.getPHOTO_USER().equals("null")) {
             Uri uri = Uri.parse(Const.dns+"/colis/uploads/photo_de_profil/" + annonce.getPHOTO_USER());
             pictureuser.setImageURI(uri);
@@ -92,7 +89,7 @@ public class DetailsAnnonces extends AppCompatActivity {
             pictureuser.setImageResource(R.drawable.ic_profile_colorier);
         }
 
-        block_detail.setOnClickListener(new View.OnClickListener() {
+        block_title.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),DetailsAnnonceur.class);

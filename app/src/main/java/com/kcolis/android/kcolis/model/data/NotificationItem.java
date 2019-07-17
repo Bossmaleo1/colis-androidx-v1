@@ -2,7 +2,7 @@ package com.kcolis.android.kcolis.model.data;
 
 import android.content.Context;
 
-public class ValidationItem {
+public class NotificationItem {
 
     private Context context;
     private int id;
@@ -16,9 +16,10 @@ public class ValidationItem {
     private String prenom_emmetteur;
     private String photo_emmetteur;
     private String telephone;
+    private String keypush;
 
-    public ValidationItem(Context context,int id,String description,String date_validation,String statut_validation,String nombre_kilo,String id_emmetteur,
-                          String id_annonce,String nom_emmetteur,String prenom_emmetteur,String photo_emmetteur,String phone) {
+    public NotificationItem(Context context,int id,String description,String date_validation,String statut_validation,String nombre_kilo,String id_emmetteur,
+                          String id_annonce,String nom_emmetteur,String prenom_emmetteur,String photo_emmetteur,String phone,String keypush) {
         this.context = context;
         this.id = id;
         this.description = description;
@@ -31,6 +32,7 @@ public class ValidationItem {
         this.prenom_emmetteur = prenom_emmetteur;
         this.photo_emmetteur = photo_emmetteur;
         this.telephone = phone;
+        this.keypush = keypush;
     }
 
 
@@ -128,5 +130,13 @@ public class ValidationItem {
 
     public void setContext(Context context) {
         this.context = context;
+    }
+
+    public String getKeypush() {
+        return keypush;
+    }
+
+    public void setKeypush(String keypush) {
+        this.keypush = keypush;
     }
 }

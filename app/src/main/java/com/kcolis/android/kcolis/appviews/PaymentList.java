@@ -56,7 +56,7 @@ public class PaymentList extends AppCompatActivity {
         context = this;
         database = new DatabaseHandler(this);
         session = new SessionManager(getApplicationContext());
-        getSupportActionBar().setTitle("Moyens Paiements");
+        getSupportActionBar().setTitle("Paiements");
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //addElement();

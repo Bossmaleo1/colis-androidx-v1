@@ -1,6 +1,5 @@
 package com.kcolis.android.kcolis.appviews;
 
-import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -97,7 +96,7 @@ public class Home extends AppCompatActivity {
         menu = navigation.getMenu();
         Icon_notification = res.getDrawable(R.drawable.ic_notifications_black_24dp);
         Icon_recherche = res.getDrawable(R.drawable.baseline_search_black_24);
-        Icon_annonce = res.getDrawable(R.drawable.baseline_flight_black_24);
+        Icon_annonce = res.getDrawable(R.drawable.baseline_control_point_black_24);
         annonce_title_text = new SpannableString("Ajouter Annonce");
         recherche_title_text = new SpannableString("Recherche");
         notification_title_text = new SpannableString("Notifications");
@@ -188,7 +187,7 @@ public class Home extends AppCompatActivity {
                 case R.id.recherche:
                     Icon_notification = res.getDrawable(R.drawable.ic_notifications_black_24dp);
                     Icon_recherche = res.getDrawable(R.drawable.baseline_search_black_24);
-                    Icon_annonce = res.getDrawable(R.drawable.baseline_flight_black_24);
+                    Icon_annonce = res.getDrawable(R.drawable.baseline_control_point_black_24);
                     annonce_title_text = new SpannableString("Ajouter Annonce");
                     recherche_title_text = new SpannableString("Recherche");
                     notification_title_text = new SpannableString("Notifications");
@@ -208,7 +207,7 @@ public class Home extends AppCompatActivity {
                 case R.id.annonce:
                     Icon_notification = res.getDrawable(R.drawable.ic_notifications_black_24dp);
                     Icon_recherche = res.getDrawable(R.drawable.baseline_search_black_24);
-                    Icon_annonce = res.getDrawable(R.drawable.baseline_flight_black_24);
+                    Icon_annonce = res.getDrawable(R.drawable.baseline_control_point_black_24);
                     annonce_title_text = new SpannableString("Ajouter Annonce");
                     recherche_title_text = new SpannableString("Recherche");
                     notification_title_text = new SpannableString("Notifications");
@@ -229,7 +228,7 @@ public class Home extends AppCompatActivity {
                 case R.id.notification:
                     Icon_notification = res.getDrawable(R.drawable.ic_notifications_black_24dp);
                     Icon_recherche = res.getDrawable(R.drawable.baseline_search_black_24);
-                    Icon_annonce = res.getDrawable(R.drawable.baseline_flight_black_24);
+                    Icon_annonce = res.getDrawable(R.drawable.baseline_control_point_black_24);
                     annonce_title_text = new SpannableString("Ajouter Annonce");
                     recherche_title_text = new SpannableString("Recherche");
                     notification_title_text = new SpannableString("Notifications");
@@ -339,7 +338,7 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        CountNotification();
+        //CountNotification();
         // register new push message receiver
         // by doing this, the activity will be notified each time a new message arrives
         LocalBroadcastManager.getInstance(this).registerReceiver(mRegistrationBroadcastReceiver,

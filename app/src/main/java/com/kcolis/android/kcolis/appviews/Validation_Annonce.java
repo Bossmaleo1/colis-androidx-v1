@@ -295,7 +295,7 @@ public class Validation_Annonce extends AppCompatActivity {
     private void volley_de_fcm_notification()
     {
         String message = "L'utilisateur "+user.getPRENOM()+" "+user.getNOM()+" vous effetuez une demande d'expedition de son colis";
-        String url_envoie =  Const.dns+"/colis/Apifcm/apiFCM.php?push_type=individual&regId="+String.valueOf(annonce.getKEYPUSH())+"&message="+message
+        String url_envoie =  Const.dns+"/colis/Apifcm/apiFCMmessagerie.php?push_type=individual&regId="+String.valueOf(annonce.getKEYPUSH())+"&message="+message
                 +"&title=Colis";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url_envoie,
                 new Response.Listener<String>() {
@@ -335,7 +335,7 @@ public class Validation_Annonce extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        //volley_de_fcm_notification();
+                        volley_de_fcm_notification();
                         //volley_de_sms_notification();
                         progressBar.setVisibility(View.GONE);
                         validation_image.setVisibility(View.VISIBLE);

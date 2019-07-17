@@ -62,6 +62,22 @@
 
         </activity>
 
+        <activity android:name=".appviews.DetailsValidation" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".appviews.Avis" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".appviews.VerificationPieceIdentite" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".appviews.ProfilDetails" android:screenOrientation="portrait">
+
+        </activity>
+
         <service
             android:name=".service.MyFirebaseMessagingService"
             android:exported="false">

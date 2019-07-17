@@ -8,9 +8,8 @@
 
     <item
         android:id="@+id/annonce"
-        android:icon="@drawable/baseline_flight_black_24"
-        android:title="Ajouter" />
-
+        android:icon="@drawable/baseline_control_point_black_24"
+        android:title="Ajouter Annonce" />
 
     <item
         android:id="@+id/notification"
